@@ -1,0 +1,65 @@
+/* Estilos para el cuerpo de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Imagenes/Fondo_1.jpg'); /* Ruta relativa a la ubicación del archivo CSS */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Estilos para el contenedor del formulario */
+.contenedor {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+}
+
+/* Estilos para el formulario */
+.caja-formulario {
+    background-color: #a8f7f3; /* Color estilo agua (puedes ajustarlo) */
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px; /* Ajusta el ancho según tu preferencia */
+    box-shadow: 0px 0px 10px rgba(22, 209, 69, 0.2);
+}
+
+/* Estilos para el título del formulario */
+.titulo-formulario {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el elemento de captcha */
+.captcha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+/*Tamaño de las letras del captcha*/
+.texto-captcha {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.captcha input {
+    flex-grow: 1;
+}
+
+/* Estilos para el título */
+.titulo {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 65px; /* Ajusta el margen inferior según tu preferencia */
+    color: #00f7ea; /* Cambiar el color del texto a blanco */
+    text-shadow: 10px 10px 20px rgba(221, 228, 218, 0.945); /* Sombras en blanco */
+    background-color: rgb(0, 0, 0); /* Fondo semitransparente */
+    padding: 10px; /* Agregar espaciado alrededor del texto */
+}

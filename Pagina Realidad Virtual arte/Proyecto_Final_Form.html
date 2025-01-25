@@ -1,0 +1,40 @@
+<!-- PROYECTO REALIZADO POR JEFFERSON POETA Y BRANDON SAUCEDO -->
+<html>
+<head>
+    <title>ARTE Y AR</title>
+    <link rel="stylesheet" type="text/css" href="Proyecto_Final_Form.css">
+    <script src="Proyecto_Final_Form.js"></script> <!-- Enlace al archivo JavaScript externo -->
+</head>
+<body>
+    <div class="contenedor">
+        <h1 class="titulo">INICIA SESIÓN PARA ACCEDER A NUESTRA PÁGINA WEB</h1>
+        <div class="caja-formulario">
+            <h2 class="titulo-formulario">ACCESO</h2>
+            <form id="formularioLogin" action="Proyecto_Final.html" method="post" onsubmit="return validarCaptcha();">
+                <label for="nombreUsuario"><b>Nombre de Usuario:</b></label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario" required><br><br>
+
+                <label for="carnet"><b>Código (Número de Carnet):</b></label>
+                <input type="number" id="carnet" name="carnet" required><br><br>
+
+                <!-- CAPTCHA -->
+                <label for="captcha"><b>Captcha:</b></label>
+                <div class="captcha">
+                    <input type="text" id="inputCaptcha" name="captcha" required>
+                </div>
+                <span class="texto-captcha" id="texto-captcha"></span><br>
+                <!-- Fin del CAPTCHA -->
+
+                <input type="submit" value="Iniciar Sesión">
+                <!-- Botón de Cancelar -->
+                <input type="button" value="Cancelar" onclick="cancelarLogin()">
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Llamar a la función para mostrar el CAPTCHA generado
+        mostrarCaptcha();
+    </script>
+</body>
+</html>

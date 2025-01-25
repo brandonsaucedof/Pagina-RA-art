@@ -1,0 +1,23 @@
+/* Estilos para el contenedor de detalles de la obra de arte */
+.detalles-obra {
+    display: flex; /* Convierte en contenedor flexible */
+    align-items: center; /* Alinea verticalmente el contenido */
+    justify-content: space-between; /* Espacio entre la imagen y el texto */
+    padding: 20px; /* Espacio alrededor del contenido */
+}
+
+/* Estilos para la imagen */
+.imagen-obra img {
+    max-width: 700px; /* Tamaño máximo de la imagen */
+    height: 700px; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para el texto */
+.texto-obra {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+    padding-left: 20px; /* Espacio a la izquierda del texto */
+}
+
+.texto-obra p {
+    margin: 0; /* Elimina el margen predeterminado */
+}

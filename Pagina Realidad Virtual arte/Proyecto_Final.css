@@ -1,0 +1,120 @@
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Imagenes/Fondo_1.jpg'); /* Ruta relativa a la ubicación del archivo CSS */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:#ffffff;
+}
+
+/* Estilos para la galería de arte */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.obra-arte {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para las imágenes de arte */
+.obra-arte img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Agrega una transición suave a la transformación */
+}
+
+/* Efecto de zoom al pasar el cursor */
+.obra-arte img:hover {
+    transform: scale(1.1); /* Aplica un zoom del 10% al pasar el cursor */
+    cursor: pointer; /* Cambia el cursor al estilo de selección */
+}
+
+/* Estilo para las imágenes de arte cuando se les da clic */
+.obra-arte.seleccionada img {
+    transform: scale(1.2); /* Aplica un zoom del 20% cuando se selecciona */
+    cursor: pointer; /* Cambia el cursor al estilo de selección */
+}
+
+/* Estilos para el cuadro de título */
+.contenedor-titulo {
+    text-align: center; /* Centrar el texto en el cuadro de título */
+    background-color: rgba(255, 0, 98, 0.658); /* Fondo rojo */
+    padding: 10px; /* Eliminar el espacio alrededor del título */
+    text-shadow: 4px 4px 8px black; /* Agregar sombra de color negro */
+    position: relative;
+}
+/* Para el texto XD */
+.titulo-principal {
+    font-size: 60px;
+    font-weight: bold; /* Texto en negrita */
+    color: white; /* Color del texto */
+    line-height: 1.2; /* Ajusta este valor para controlar la separación entre letras */
+}
+
+/* Estilos para el cuadro de comentario */
+.cuadro-comentario {
+    display: flex;
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    background-color: black; /* Cambiar el fondo a negro */
+    padding: 20px; /* Aumenta el espacio alrededor del comentario */
+    color: white; /* Cambiar el color del texto a blanco */
+    text-align: center; /* Centra el texto dentro del cuadro */
+}
+
+.comentario {
+    flex: 1; /* Hace que este div ocupe el espacio restante */
+}
+
+.comentario p {
+    font-size: 24px; /* Tamaño de fuente aumentado */
+    color: #ffffff;
+}
+
+/* Estilos para el código QR */
+.codigo-qr {
+    margin-top: 20px; /* Añade espacio entre el comentario y el QR */
+}
+
+.codigo-qr img {
+    width: 250px; /* Tamaño del código QR */
+    height: auto;
+}
+
+/* Eliminar márgenes alrededor del título y el cuadro de comentario */
+.titulo-principal,
+.cuadro-comentario {
+    margin: 0;
+}
+
+/* Estilos para el contenedor del carrusel de imágenes */
+.carrusel-imagenes {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    height: 550px; /* Establece la altura deseada para el carrusel */
+    width: 1350px;
+    position: relative;
+}
+.pie-pagina {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para las secciones de "Acerca de" y "Correos electrónicos" */
+.acerca-de, .correos-electronicos {
+    display: inline-block;
+    width: 50%;
+}
